@@ -2,28 +2,29 @@
 
 
 ### Задание 1
-![Задание-1 Скриншот-1](https://github.com/SoReX48/1.md/blob/main/img/1.png)
+
+![Задание-1 Скриншот-1](https://github.com/SoReX48/3.md/blob/main/img/1.png)
 
 
-[haproxy](https://github.com/SoReX48/1.md/blob/main/haproxy1.cfg)
+![Задание-1 Скриншот-2](https://github.com/SoReX48/3.md/blob/main/img/2.png)
+
+
+![Задание-1 Скриншот-3](https://github.com/SoReX48/3.md/blob/main/img/3.png)
+
 
 ### Задание 2
-![Задание-2 Скриншот-1](https://github.com/SoReX48/1.md/blob/main/img/2.png)
+
+![Задание-2 Скриншот-1](https://github.com/SoReX48/3.md/blob/main/img/2.1.png)
 
 
-[haproxy](https://github.com/SoReX48/1.md/blob/main/haproxy2.cfg)
+[cron_local_backup.sh](https://github.com/SoReX48/3.md/blob/main/cron_local_backup.sh)
+
+
+[cronlogfile.log](https://github.com/SoReX48/3.md/blob/main/cronlogfile.log)
+
+
+[mycron](https://github.com/SoReX48/3.md/blob/main/mycron)
+
 
 ### Задание 3
-![Задание-2 Скриншот-1](https://github.com/SoReX48/1.md/blob/main/img/3.png)
-
-
-[haproxy](https://github.com/SoReX48/1.md/blob/main/haproxy3.cfg)
-
-
-[example-http.conf](https://github.com/SoReX48/1.md/blob/main/example-http.conf)
-
-
-[nginx.conf](https://github.com/SoReX48/1.md/blob/main/nginx.conf)
-
-
-[upstream.inc](https://github.com/SoReX48/1.md/blob/main/upstream.inc)
+![Задание-3 Скриншот-1](https://github.com/SoReX48/3.md/blob/main/img/3.1.png)
