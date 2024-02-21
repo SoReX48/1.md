@@ -25,13 +25,13 @@
 #### Задание 2. Memcached
 
 Скриншот-1 к заданию 2:
-![Скриншот-1](https://github.com/SoReX48/8.2/blob/main/Кеширование_Redis_memcached/1.png)
+![Скриншот-1](https://github.com/SoReX48/11-02.md/blob/main/Кеширование_Redis_memcached/1.png)
 
 #### Задание 3. Удаление по TTL в Memcached
 Скриншот-2 к заданию 3:
-![Скриншот-2](https://github.com/SoReX48/8.2/blob/main/Кеширование_Redis_memcached/2.png)
+![Скриншот-2](https://github.com/SoReX48/11-02.md/blob/main/Кеширование_Redis_memcached/2.png)
 
 #### Задание 4. Запись данных в Redis
 Скриншот-3 к заданию 4:
-![Скриншот-3](https://github.com/SoReX48/8.2/blob/main/Кеширование_Redis_memcached/3.png)
+![Скриншот-3](https://github.com/SoReX48/11-02.md/blob/main/Кеширование_Redis_memcached/3.png)
 
