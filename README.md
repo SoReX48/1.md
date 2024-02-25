@@ -36,4 +36,3 @@
 ![Скриншот-4](https://github.com/SoReX48/11-03.md/blob/main/ELK/4.png)
 
 
-[ELK](https://github.com/SoReX48/11-03.md/blob/main/ELK/elk2)
