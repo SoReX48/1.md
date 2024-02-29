@@ -1,39 +1,55 @@
-# Домашнее задание к занятию "`ELK`" - `Пешкин Евгений`
+# Домашнее задание к занятию "`Очереди RabbitMQ`" - `Пешкин Евгений`
 
 
-### Задание 1. Elasticsearch
-Установите и запустите Elasticsearch, после чего поменяйте параметр cluster_name на случайный.
+### Задание 1. Установка RabbitMQ
+Используя Vagrant или VirtualBox, создайте виртуальную машину и установите RabbitMQ. Добавьте management plug-in и зайдите в веб-интерфейс.
 
-Приведите скриншот команды 'curl -X GET 'localhost:9200/_cluster/health?pretty', 
-сделанной на сервере с установленным Elasticsearch. Где будет виден нестандартный cluster_name.
+Итогом выполнения домашнего задания будет приложенный скриншот веб-интерфейса RabbitMQ.
 
 #### Ответ
-![Скриншот-1](https://github.com/SoReX48/11-03.md/blob/main/ELK/1.png)
+![Скриншот-1](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/1.png)
 
 
-### Задание 2. Kibana
-Установите и запустите Kibana.
-Приведите скриншот интерфейса Kibana на странице http://<ip вашего сервера>:5601/app/dev_tools#/console, 
-где будет выполнен запрос GET /_cluster/health?pretty.
+### Задание 2. Отправка и получение сообщений
+Зайдите в веб-интерфейс, найдите очередь под названием hello и сделайте скриншот.
 
-#### Ответ 
-![Скриншот-2](https://github.com/SoReX48/11-03.md/blob/main/ELK/2.png)
-
-
-### Задание 3. Logstash
-Установите и запустите Logstash и Nginx. С помощью Logstash отправьте access-лог Nginx в Elasticsearch.
-Приведите скриншот интерфейса Kibana, на котором видны логи Nginx.
+После чего запустите второй скрипт consumer.py и сделайте скриншот результата выполнения скрипта
 
 #### Ответ 
-![Скриншот-3](https://github.com/SoReX48/11-03.md/blob/main/ELK/3.png)
+![Скриншот-2](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/2.png)
+
+![Скриншот-2.1](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/2.1.png)
+
+### Задание 3. Подготовка HA кластера
+В качестве решения домашнего задания приложите скриншоты из веб-интерфейса с информацией о доступных нодах в кластере и включённой политикой.
 
 
-### Задание 4. Filebeat.
-Установите и запустите Filebeat. Переключите поставку логов Nginx с Logstash на Filebeat.
-Приведите скриншот интерфейса Kibana, на котором видны логи Nginx, которые были отправлены через Filebeat.
+Также приложите вывод команды с двух нод:
+
+$ rabbitmqctl cluster_status
+
+
+Для закрепления материала снова запустите скрипт producer.py и приложите скриншот выполнения команды на каждой из нод:
+
+$ rabbitmqadmin get queue='hello'
+
+
+После чего попробуйте отключить одну из нод, желательно ту, к которой подключались из скрипта, затем поправьте параметры подключения в скрипте consumer.py на вторую ноду и запустите его.
+
+Приложите скриншот результата работы второго скрипта.
 
 #### Ответ 
-![Скриншот-4](https://github.com/SoReX48/11-03.md/blob/main/ELK/4.png)
 
+![Скриншот-3](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/3.png)
 
-[ELK](https://github.com/SoReX48/11-03.md/tree/main/ELK/Elasticsearch_Logstash_Kibana)
+![Скриншот-3.1](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/3.1.png)
+
+![Скриншот-3.2](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/3.2.png)
+
+![Скриншот-3.3](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/3.3.png)
+
+![Скриншот-3.4](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/3.4.png)
+
+![Скриншот-3.5](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/3.5.png)
+
+![Скриншот-3.6](https://github.com/SoReX48/11-04.md/blob/main/Очереди_RabbitMQ/3.6.png)
