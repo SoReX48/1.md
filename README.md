@@ -47,78 +47,134 @@
 #### Ответ:
 
 Таблица: FullName
+
 № таблицы: 1
+
 Идентификатор:
+
 full_name_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы: 
+
 first_name - Имя сотрудника - VARCHAR(50)
+
 middle_name - Отчество сотрудника - VARCHAR(50)
+
 last_name - Фамилия сотрудника - VARCHAR(50)
 
 
+
 Таблица: Cities
+
 № таблицы: 2
+
 Идентификатор:
+
 city_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы:
+
 Region - Область проживания - VARCHAR(70)
+
 city_name - Имя города проживания - VARCHAR(50)
+
 Location_address - Дом и название улицы - VARCHAR(120)
 
 
+
 Таблица: StructuralSubdivisions
+
 № таблицы: 3
+
 Идентификатор:
+
 structural_subdivision_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы:
+
 sudbivision_name - Наименование структурного подразделения - VARCHAR(100)
 
 
+
 Таблица: TypeSubdivisions
+
 № таблицы: 4
+
 Идентификатор:
+
 type_subdivision_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы:
+
 name_type_sudbivision - Имя подразделения - VARCHAR(50)
 
 
 Таблица: Posts
+
 № таблицы: 5
+
 Идентификатор:
+
 post_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы:
+
 post_name - Наименование должности - VARCHAR(70)
 
 
 Таблица: Projects
+
 № таблицы: 6
+
 Идентификатор:
+
 project_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы:
+
 name_project - Наименование проекта - VARCHAR(100)
 
 
+
 Таблица: EmployeeSalary
+
 № таблицы: 7
+
 Идентификатор:
+
 employee_salary_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы:
+
 structural_subdivision_id - Идентификатор структурного подразделения, Внешний ключ, integer
+
 type_subdivision_id - Идентификатор типа подразделения, Внешний ключ, integer
+
 post_id - Идентификатор должности, Внешний ключ, integer
+
 project_id - Идентификатор проекта, Внешний ключ, integer
+
 salary - Оклад сотрудника – MONEY
 
 
 Таблица: EmployeesInfo_id
+
 № таблицы: 8
+
 Идентификатор:
+
 EmployeesInfo_id - Идентификатор, Первичный ключ, serial
+
 Дополнительные столбцы:
+
 full_name_id - Идентификатор Имени сотрудника, Внешний ключ, integer
+
 Employee_salary_id - Идентификатор оклада, Внешний ключ, integer
+
 hire_date - Дата устройства на работу, DATE
+
 City_id - Идентификатор города, Внешний ключ, integer
+
 
 [Решение_в_формате_EXCEL](https://github.com/SoReX48/12-01.md/blob/main/Базы_данных/hw-12-1_homework.xlsx)
 
