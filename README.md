@@ -46,8 +46,10 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 <br/>
 Название таблицы | Название первичного ключа
+<br/>
 customer         | customer_id
+<br/>
 
 ![Скриншот к заданию 2](https://github.com/SoReX48/12-02.md/blob/main/Работа_с_данными_DDL_DML/5.png)
 
-[Скриншот к заданию 2](https://github.com/SoReX48/12-02.md/blob/main/Работа_с_данными_DDL_DML/Таблица.xlsx)
+[Таблица.xlsx](https://github.com/SoReX48/12-02.md/blob/main/Работа_с_данными_DDL_DML/Таблица.xlsx)
