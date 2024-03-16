@@ -18,13 +18,19 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 
 1) перечислите узкие места;
 <br/>
-#### Ответ
-1) Nested loop iner join - Объединяемые таблицы через INNER JOIN имеют большое количество строк
-2) Table scan on p - Сканирование таблицы payment занимает очень много времени
-3) Covering index scan on f using idx_title
-   Single-row index lookup on c using PRIMARY
-   Single-row covering index lookup on i using PRIMARY
 
+#### Ответ
+<br/>
+1) Nested loop iner join - Объединяемые таблицы через INNER JOIN имеют большое количество строк
+<br/>
+2) Table scan on p - Сканирование таблицы payment занимает очень много времени
+<br/>
+3) Covering index scan on f using idx_title
+<br/>
+   Single-row index lookup on c using PRIMARY
+<br/>   
+   Single-row covering index lookup on i using PRIMARY
+<br/>
 mySQL пытается обнаружить доступные индексы но в результате того что индексов нет время запроса увеличивается так как
 запросы не оптимизирован
 
@@ -36,12 +42,15 @@ mySQL пытается обнаружить доступные индексы н
 <br/>
 
 #### Ответ
+<br/>
 Сделаем индексы:
+<br/>
 CREATE INDEX idx_customer_id ON rental (customer_id);
+<br/>
 CREATE INDEX idx_inventory_id ON rental (inventory_id);
+<br/>
 CREATE INDEX idx_film_id ON inventory (film_id);
 
-<br/>
-![Скриншот к заданию 2](https://github.com/SoReX48/12-05.md/blob/main/Индексы/3.png)
-<br/>
-![Скриншот к заданию 2](https://github.com/SoReX48/12-05.md/blob/main/Индексы/4.png)
+
+![Скриншот к заданию 3](https://github.com/SoReX48/12-05.md/blob/main/Индексы/3.png)
+![Скриншот к заданию 4](https://github.com/SoReX48/12-05.md/blob/main/Индексы/4.png)
