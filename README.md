@@ -58,4 +58,8 @@ CREATE INDEX idx_film_id ON inventory (film_id);
 <br/>
 
 ![Скриншот к заданию 3](https://github.com/SoReX48/12-05.md/blob/main/Индексы/3.png)
+
+<br/>
+##### По доработке:
+
 ![Скриншот к заданию 4](https://github.com/SoReX48/12-05.md/blob/main/Индексы/4.png)
