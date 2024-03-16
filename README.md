@@ -25,11 +25,14 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
 <br/>
 2) Table scan on p - Сканирование таблицы payment занимает очень много времени
 <br/>
-3) Covering index scan on f using idx_title
+3)
+<br/> 
+Covering index scan on f using idx_title
 <br/>
-   Single-row index lookup on c using PRIMARY
+Single-row index lookup on c using PRIMARY
 <br/>   
-   Single-row covering index lookup on i using PRIMARY
+Single-row covering index lookup on i using PRIMARY
+<br/>
 <br/>
 mySQL пытается обнаружить доступные индексы но в результате того что индексов нет время запроса увеличивается так как
 запросы не оптимизирован
@@ -51,6 +54,8 @@ CREATE INDEX idx_inventory_id ON rental (inventory_id);
 <br/>
 CREATE INDEX idx_film_id ON inventory (film_id);
 
+<br/>
+<br/>
 
 ![Скриншот к заданию 3](https://github.com/SoReX48/12-05.md/blob/main/Индексы/3.png)
 ![Скриншот к заданию 4](https://github.com/SoReX48/12-05.md/blob/main/Индексы/4.png)
