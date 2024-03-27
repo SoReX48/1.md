@@ -41,9 +41,9 @@
 Проведение инкрементного бэкапа каждый час позволит минимизировать потерю данных в случае возникновения проблем.
 
 ### Задание 2 PostgreSQL
-<br/>
+
 #### Ответ
-<br/>
+
 Cоздание дампа:
 <br/>
 pg_dump [connection-option...] [option...] [dbname]
@@ -68,9 +68,9 @@ pg_restore -C -d databasename db.dump
 
 
 ### Задание 3 MySQL
-<br/>
+
 #### Ответ
-<br/> 
+
 mysqlbackup --defaults-file=/home/dbadmin/my.cnf \
 <br/>
   --incremental --incremental-base=history:last_backup \
