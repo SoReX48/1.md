@@ -65,10 +65,11 @@ pg_dump -Fc mydb > db.dump
 <br/>
 И теперь мы можем восстановить нашу базу данных
 pg_restore -C -d databasename db.dump
-<br/>
+
+
 ### Задание 3 MySQL
 <br/>
-#### Ответ:
+#### Ответ
 <br/> 
 mysqlbackup --defaults-file=/home/dbadmin/my.cnf \
 <br/>
